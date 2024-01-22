@@ -40,7 +40,11 @@ export default function ExercisesPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Nome: ${inputName}\nEmail: ${inputEmail}\nAssunto: ${inputAssunto}`);
+    alert(`
+    Nome: ${inputName}
+    Email: ${inputEmail}
+    Assunto: ${inputAssunto}
+    `);
     setInputName("");
     setInputEmail("");
     setInputAssunto("");
@@ -66,7 +70,7 @@ export default function ExercisesPage() {
           <input
             type="text"
             value={inputName}
-            onChange={(e) => setInputName(e.target.value)}
+            onChange={(event) => setInputName(event.target.value)}
           />
         </div>
         <div>
@@ -74,7 +78,7 @@ export default function ExercisesPage() {
           <input
             type="text"
             value={inputEmail}
-            onChange={(e) => setInputEmail(e.target.value)}
+            onChange={(event) => setInputEmail(event.target.value)}
           />
         </div>
         <div>
@@ -82,7 +86,7 @@ export default function ExercisesPage() {
           <input
             type="text"
             value={inputAssunto}
-            onChange={(e) => setInputAssunto(e.target.value)}
+            onChange={(event) => setInputAssunto(event.target.value)}
           />
         </div>
         <button type="submit">Submit</button>
